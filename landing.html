@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberGuard Academy Landing Page</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+    a { text-decoration: none; }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .navbar li {
+      margin-right: 20px;
+    }
+    .navbar a {
+      color: #005f73;
+      font-weight: 500;
+    }
+    .login-button {
+      background: #ee9b00;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    /* Hero Section (1A, 1B, 1C) */
+    .header {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      min-height: 400px;
+      margin-top: 60px;
+      background: #001219;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.urbannetwork.co.uk/wp-content/uploads/2023/08/CyberGuard_blue_landingpage.png') center/cover no-repeat;
+      filter: blur(8px) brightness(0.6);
+      z-index: 0;
+    }
+    .header .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .header p {
+      font-size: 1.1rem;
+      margin: 10px 0 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .cta-button {
+      background: #ee9b00;
+      color: #001219;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* 1D Benefit Summary */
+    .benefit-summary {
+      max-width: 800px;
+      margin: 30px auto;
+      text-align: center;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* 3 Show Them the Benefits */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 50px 20px;
+    }
+    .feature {
+      width: 30%;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .feature h3 {
+      color: #005f73;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      color: #333;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 50px 20px;
+    }
+    .services h2 {
+      text-align: center;
+      color: #005f73;
+      margin-bottom: 30px;
+    }
+    .services-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service-item {
+      width: 30%;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .service-item h3 {
+      color: #0a9396;
+      margin-bottom: 10px;
+    }
+    .service-item p {
+      color: #333;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: #eef4f7;
+      padding: 50px 20px;
+    }
+    .gallery img {
+      width: 30%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* 4 Social Proof */
+    .social-proof {
+      padding: 50px 20px;
+    }
+    .social-proof h2 {
+      text-align: center;
+      color: #005f73;
+      margin-bottom: 30px;
+    }
+    .social-proof blockquote {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 5px solid #ee9b00;
+      color: #333;
+    }
+
+    /* Footer */
+    .footer {
+      background: #001219;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .footer a {
+      color: #ee9b00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="/login" class="login-button">Login</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="header">
+    <div class="content">
+      <h1>CyberGuard Academy</h1>
+      <p>Your AI‑Driven Human Shield Against Phishing</p>
+      <a href="#" class="cta-button">Start Your Free 14‑Day Trial</a>
+    </div>
+  </header>
+
+  <!-- Benefit Summary -->
+  <div class="benefit-summary">
+    CyberGuard Academy uses AI-driven nano-courses and live micro-nudges to reduce phishing clicks by over 60%. Deploys in minutes on Microsoft 365 & Google Workspace.
+  </div>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>Real‑Time Nudges</h3>
+      <p>Instant alerts when a suspicious link appears.</p>
+    </div>
+    <div class="feature">
+      <h3>Adaptive Nano‑Learning</h3>
+      <p>Bite-sized lessons tailored to each user's risk profile.</p>
+    </div>
+    <div class="feature">
+      <h3>Gamified Rewards</h3>
+      <p>Earn badges and points to boost team engagement.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="services-items">
+      <div class="service-item">
+        <h3>24/7 Monitoring</h3>
+        <p>Continuous email scanning to catch threats instantly.</p>
+      </div>
+      <div class="service-item">
+        <h3>Enterprise Training</h3>
+        <p>Workshops and micro-courses to build security awareness.</p>
+      </div>
+      <div class="service-item">
+        <h3>Dedicated Support</h3>
+        <p>24/7 helpdesk for onboarding and incident response.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery removed: replace placeholders with real product screenshots or remove this section if unavailable -->
+<!-- Social Proof -->
+  <section id="social-proof" class="social-proof">
+    <h2>What Our Users Say</h2>
+    <blockquote>
+      “In just 30 days, our phishing click-rate dropped 70%. The micro-nudges are game-changers.”<br>
+      — Jordan Lee, IT Director, MidState Logistics
+    </blockquote>
+    <blockquote>
+      “The short lessons and badges supercharged our security culture.”<br>
+      — Priya Singh, HR Manager, Southern Tech Co.
+    </blockquote>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <p>&copy; 2025 CyberGuard Academy • <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
